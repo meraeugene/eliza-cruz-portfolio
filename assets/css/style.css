@@ -239,6 +239,10 @@ footer .container {
     padding: 0 1em;
   }
 
+  nav .container {
+    padding: 0;
+  }
+
   /* HOME */
 
   #home {
