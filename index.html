@@ -8,8 +8,8 @@
   <title>Eliza Cruz PortFolio</title>
   <meta name="title" content="Eliza Cruz PortFolio" />
   <meta name="description" content="Eliza Dela Cruz PortFolio" />
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/meraeugene/eliza-cruz-portfolio/main/assets/images/preview.png" />
+  <!-- <meta property="og:image"
+    content="https://raw.githubusercontent.com/meraeugene/eliza-cruz-portfolio/main/assets/images/preview.png" /> -->
   <link rel="image_src" href="preview.png" />
 
   <!-- bootstrap cdn css -->
@@ -26,7 +26,7 @@
     type="image/icon type">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar">
+<body data-bs-spy="scroll" data-bs-target="#myNavbar">
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark " style="position: fixed; top: 0; z-index: 10; width: 100%;"
     id="myNavbar">
@@ -41,16 +41,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link " href="#home">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
+          <a class="nav-link" href="#projects">Projects</a>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
           </li>
         </ul>
       </div>
@@ -70,8 +70,8 @@
 
         <div class="col-lg-8  col-md-7"">
           <h1 class=" display-4 fw-bold" data-aos="fade-up" data-aos-delay="300">
-          I'M A <span class="text-brand">(Future Job)</span> FROM (CITY),
-          PHILIPPINES
+          I'm a <span class="text-brand">Front-end Developer</span> from Maligaya, Cabiao, Nueva Ecija,
+          Philippines
           </h1>
           <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="500">
             I am <span class="text-brand fw-bold">Eliza Dela Cruz</span>, I create great user experiences that are
@@ -79,6 +79,7 @@
           </p>
           <div data-aos="fade-up" data-aos-delay="600" class="btn__contact">
             <a href="#projects" class="btn btn-brand me-3 ">Explore my projects</a>
+            <a href="#" class="link-custom">Call: 09264475173</a>
 
           </div>
         </div>
@@ -88,7 +89,7 @@
   <!-- //HOME -->
 
   <!-- PROJECTS -->
-  <div id="projects" class="full-height px-lg-5">
+  <section id="projects" class="full-height px-lg-5">
     <div class="container">
       <div class="row pb-4" data-aos="fade-up">
         <div class="col-lg-8">
@@ -160,7 +161,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- //PROJECTS -->
 
   <!-- ABOUT -->
@@ -179,8 +180,8 @@
           </h3>
           <div class="row">
             <div class="col-12 col-md-3 col-lg-6">
-              <img src="./assets/images/profile.jpg" alt="profile" class="rounded-circle" data-aos="fade-up"
-                data-aos-delay="600" style="border: 4px solid #ff8ba7; width: 150px;" />
+              <img src="./assets/images/profile.jpg" alt="profile" data-aos="fade-up" data-aos-delay="600"
+                style="border: 4px solid #ff8ba7; width: 150px; height: 150px; border-radius: 50%;" />
             </div>
             <div class="col-12 col-md-9 col-lg-6" data-aos="fade-up" data-aos-delay="600">
               <h5>Eliza Dela Cruz</h>
@@ -213,32 +214,38 @@
           </div>
           <div class="row mt-4" data-aos="fade-up" data-aos-delay="600">
             <div class="col-12 col-md-10 col-lg-12">
-              <p>Experienced [Your Profession/Title] with a focus on [Key Skills/Expertise]. Committed to innovative
-                problem-solving, I balance work with a passion for [Your Hobbies or Interests].
+              <p>As a recent graduate in IT, I have a solid grasp of fundamental concepts and am proficient in
+                programming languages like Java, Python, and C++. My hands-on experience includes database management,
+                showcasing adaptability across diverse IT domains such as network administration, cybersecurity, and
+                software development. My analytical and problem-solving skills have been refined through academic
+                projects. Despite limited professional experience, I am proactive, an effective communicator, and
+                enthusiastic about contributing as a valuable team player in a dynamic IT environment.
+
               </p>
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-md-3 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="col-12 col-md-3 col-lg-5" data-aos="fade-up" data-aos-delay="600">
               <h6 class="text-brand ">Skills</h5>
                 <ul>
-                  <li>Skill 1</li>
-                  <li>Skill 2</li>
-                  <li>Skill 3</li>
-                  <li>Skill 4</li>
-                  <li>Skill 5</li>
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>C++</li>
+                  <li>Network Administration</li>
+                  <li>Cybersecurity</li>
+                  <li>Software Development</li>
                 </ul>
             </div>
 
-            <div class="col-12 col-md-5 col-lg-8">
-              <h6 class="text-brand " data-aos="flip-up" data-aos-delay="600">Curiculum Vitae</h5>
-                <button data-aos="flip-up" data-aos-delay="600" class="btn btn-brand mt-1 mb-2" style="width: 100%;"><i
-                    class="fa-solid fa-download"></i>
-                  Download CV</button>
-                <h6 class="mt-1 text-brand " data-aos="flip-up" data-aos-delay="600">Resume</h5>
-                  <button style="width: 100%;" class="btn btn-brand mt-1" data-aos="flip-up" data-aos-delay="600"><i
-                      class="fa-solid fa-download"></i> Download
-                    Resume</button>
+            <div class="col-12 col-md-5 col-lg-7">
+              <h6 class="text-brand " data-aos="flip-up" data-aos-delay="600">Curiculum Vitae</h6>
+              <button data-aos="flip-up" data-aos-delay="600" class="btn btn-brand mt-1 mb-2" style="width: 100%;"><i
+                  class="fa-solid fa-download"></i>
+                Download </button>
+              <h6 class="mt-1 text-brand " data-aos="flip-up" data-aos-delay="600">Resume</h6>
+              <button style="width: 100%;" class="btn btn-brand mt-1 " data-aos="flip-up" data-aos-delay="600"><i
+                  class="fa-solid fa-download"></i>
+                Download </button>
             </div>
           </div>
         </div>
@@ -250,25 +257,28 @@
           <div class="row gy-4">
             <div class="col-12" data-aos="fade-up" data-aos-delay="600">
               <div class="card-bg p-4 rounded-4 shadow-effect">
-                <h5>College Course </h5>
-                <p class="text-brand mb-2">College School</p>
-                <p class="mb-0">description about school</p>
+                <h5>Bachelor of Science in Information Technology </h5>
+                <p class="text-brand mb-2"> 2023</p>
+                <p class="mb-0">1st Year - Dean's Lister (2nd Semester)
+                  2nd Year - Dean's Lister (1st & 2nd Semester)</p>
               </div>
             </div>
 
             <div class="col-12" data-aos="fade-up" data-aos-delay="600">
               <div class="card-bg p-4 rounded-4 shadow-effect">
-                <h5>HighSchool Name</h5>
-                <p class="text-brand mb-2">School Year</p>
-                <p class="mb-0">description about school</p>
+                <h5>General de Jesus College </h5>
+                <p class="text-brand mb-2">2021</p>
+                <p class="mb-0">Grade 11 - With Honors
+                  Grade 12 - With High Honors</p>
               </div>
             </div>
 
             <div class="col-12" data-aos="fade-up" data-aos-delay="600">
               <div class="card-bg p-4 rounded-4 shadow-effect">
-                <h5>Elementary School Name</h5>
-                <p class="text-brand mb-2">Elementary School Year</p>
-                <p class="mb-0">description about school</p>
+                <h5>Saint John Nepomucene Parochial School
+                </h5>
+                <p class="text-brand mb-2">2019</p>
+                <p class="mb-0">Grade 7 - Grade 8 - With Honors</p>
               </div>
             </div>
           </div>
